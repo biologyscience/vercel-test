@@ -51,7 +51,7 @@ app.once('ready', async () =>
     await dbOutlets.read();
 });
 
-const server = app.listen(interalPort, localIP, () => app.emit('ready'));
+const server = app.listen(process.env.PORT || 4000, localIP, () => app.emit('ready'));
 
 const io = new Server(server, {cors: {origin: '*'}});
 
