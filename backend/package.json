@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "nodemon index.js -e js",
+    "pullclient": "cd client/evbuild && git pull"
+  },
+  "dependencies": {
+    "crc": "^4.3.2",
+    "express": "^5.1.0",
+    "lowdb": "^7.0.1",
+    "serialport": "^13.0.0",
+    "socket.io": "^4.8.1"
+  }
+}
